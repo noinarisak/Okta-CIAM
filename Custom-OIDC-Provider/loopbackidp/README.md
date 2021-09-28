@@ -5,11 +5,11 @@ git clone https://github.com/indranilokg/Okta-CIAM.git
 
 ## Okta configuration - Part 1
 
-* Create an `Native` OIDC application from Okta admin console. Enable `Resource Owner Password` grant. Assign the application to `Everyone` group. 
+* Create a `Native` OIDC application from Okta admin console. Enable `Resource Owner Password` grant. Assign the application to `Everyone` group. 
 
 ![App](images/app1.png)
-![App](images/app1.png)
-![App](images/app1.png)
+![App](images/app2.png)
+![App](images/app3.png)
 
 
 * Note the `Client ID` and `Client Secret` values from the app. Those values are needed in the custom OIDC provider.
@@ -85,12 +85,12 @@ https://sampleoidcidp.herokuapp.com
     Client ID: <Client ID of previously created app> (Not used in sample implementation)
 
     Client Secret: <Client Secret of previously created app> (Not used in sample implementation)
-
-	Authorization endpoint: https://sampleoidcidp.herokuapp.com/authorize
-
-	Token endpoint: https://sampleoidcidp.herokuapp.com/token
-
-	JWKS endpoint: https://sampleoidcidp.herokuapp.com/keys
+    
+    Authorization endpoint: https://sampleoidcidp.herokuapp.com/authorize
+    
+    Token endpoint: https://sampleoidcidp.herokuapp.com/token
+    
+    JWKS endpoint: https://sampleoidcidp.herokuapp.com/keys
 
 ```
 
@@ -103,5 +103,8 @@ https://sampleoidcidp.herokuapp.com
 
 ## Test
 
-Go to Okta dashboard. It should redirect to the custom login page of your app. Enter valid Okta credentials for a user. 
+Start a new browser session. Go to Okta dashboard. It should redirect to the custom login page of your app. Enter valid Okta credentials for a user. 
+
 Confirm that the authentication is successful and user lands to her dashboard homepage.
+
+![Test](images/test.png)
