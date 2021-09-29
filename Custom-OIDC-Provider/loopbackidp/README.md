@@ -1,3 +1,10 @@
+# Loopback OpenID Connect Provider
+
+This sample app implements a custom **OpenID Connect** Identity Provider that can be used as an external IDP in Okta.
+In the background, it uses Okta (loop-back) itself, to generate the OpenID authentication token. The architecture is as follows:
+
+![Loopback Provider](images/LoopbackIDP.png)
+
 ## Installation
 ```
 git clone https://github.com/indranilokg/Okta-CIAM.git
