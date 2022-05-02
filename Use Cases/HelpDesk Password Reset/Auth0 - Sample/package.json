@@ -16,7 +16,8 @@
     "express-session": "^1.17.1",
     "jsonwebtoken": "*",
     "node-jose": "*",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "body-parser": "*"
   },
   "engines": {
     "node": "15.5"
