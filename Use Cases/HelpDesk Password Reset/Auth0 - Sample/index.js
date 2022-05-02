@@ -62,6 +62,7 @@ app.post("/genotp", function (request, response) {
 });
 
 app.post("/validateotp", function (request, response) {
+
   var data = {
     "grant_type" : "http://auth0.com/oauth/grant-type/passwordless/otp",
     "client_id": process.env.CLIENT_ID,
@@ -89,9 +90,26 @@ app.post("/validateotp", function (request, response) {
         response.send("OTP invalid!");
         response.end();
     });
+
 });
 
 app.post("/resetpassword", function (request, response) {
+
+  //Cleanup Passwordless JIT account
+  headers = {'authorization': 'Bearer ' + process.env.API_TOKEN};
+  axios.get(process.env.BASE_URL + '/api/v2/users?q=email%3A' + useraccount.email + '  AND identities.connection%3Aemail&search_engine=v3', {'headers':headers})
+  .then((resp) => {
+    //console.log(resp.data);
+    axios.delete(process.env.BASE_URL + '/api/v2/users/'+ (resp.data)[0].user_id, {'headers':headers})
+      .then((resp2) => {
+          console.log(resp2.data);
+      }).catch(
+        function (error2) {
+          console.log(error2)
+      });
+  });
+  
+
   var data = {
     "client_id": process.env.CLIENT_ID,
     "email": useraccount.email,
