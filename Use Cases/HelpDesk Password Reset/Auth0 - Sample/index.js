@@ -96,7 +96,7 @@ app.post("/validateotp", function (request, response) {
 app.post("/resetpassword", function (request, response) {
 
   //Cleanup Passwordless JIT account
-  headers = {'authorization': 'Bearer ' + process.env.API_TOKEN};
+  let headers = {'authorization': 'Bearer ' + process.env.API_TOKEN};
   axios.get(process.env.BASE_URL + '/api/v2/users?q=email%3A' + useraccount.email + '  AND identities.connection%3Aemail&search_engine=v3', {'headers':headers})
   .then((resp) => {
     //console.log(resp.data);
