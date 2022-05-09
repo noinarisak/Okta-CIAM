@@ -26,9 +26,9 @@ This app implements a sample HelpDesk Password Reset tool.
 
 * From a Glitch account remix the following app - https://glitch.com/edit/#!/hdauthotool
 
-* Create a .env file at top level, if not already there
+* Create a **.env** file at top level, if not already there
 
-* Add the following values to the .env file -
+* Add the following values to the **.env** file -
 
 ```
 BASE_URL: https://<your auth0 tenant>
