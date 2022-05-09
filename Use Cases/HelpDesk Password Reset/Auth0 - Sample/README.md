@@ -10,7 +10,7 @@ This app implements a sample HelpDesk Password Reset tool.
 
 * Get a management API token manually for testing - [Instructions here](https://auth0.com/docs/secure/tokens/access-tokens/management-api-access-tokens)
 
-* Create a regular web application. Add the **Passwordless OTP** grant type to the application.  [Reference](https://auth0.com/docs/authenticate/passwordless/implement-login/embedded-login/native)
+* Create a regular web application. Add the **Passwordless OTP** grant type to the application ([Reference](https://auth0.com/docs/authenticate/passwordless/implement-login/embedded-login/native)).
 
 * Enable **email** Passwordless connection. Add the web application created to the connection.
 
