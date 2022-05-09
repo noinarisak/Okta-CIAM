@@ -1,6 +1,8 @@
 # HelpDesk Password Reset Tool (Auth0)
 
-This app implements a sample HelpDesk Password Reset tool.
+This app implements a sample HelpDesk Password Reset tool. 
+
+> The app has been tested on private cloud instance. Still needs to be verified on public cloud tenant.
 
 ![HelpDesk Password Reset](public/images/HelpDeskPasswordReset.png)
 
@@ -17,10 +19,12 @@ This app implements a sample HelpDesk Password Reset tool.
 ```
 {
   "telephone": <Phone Number>,
-  "address": <Address data>
+  "address": "<Address data>"
 }
 
 ```
+
+*Note*: Telephone number should be numeric, not string
 
 ## Sample application
 
