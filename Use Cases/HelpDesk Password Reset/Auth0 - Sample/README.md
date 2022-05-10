@@ -28,7 +28,9 @@ This app implements a sample HelpDesk Password Reset tool.
 
 ## Sample application
 
-* From a Glitch account remix the following app - https://glitch.com/edit/#!/hdauthotool
+* Create a Glitch account if you already do not have one. 
+  
+* Remix the following app - https://glitch.com/edit/#!/hdauthotool
 
 * Create a **.env** file at top level, if not already there
 
