@@ -32,7 +32,7 @@ This app implements a sample HelpDesk Password Reset tool.
   
 * Remix the following app - https://glitch.com/edit/#!/hdauthotool
 
-* Create a **.env** file at top level, if not already there
+* Click on the **.env** file
 
 * Add the following values to the **.env** file -
 
