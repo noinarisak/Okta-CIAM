@@ -14,7 +14,7 @@ This app implements a sample HelpDesk Password Reset tool.
 
 * Enable **email** Passwordless connection. Add the web application created to the connection.
 
-* Ensure test user profile has the following metadata -
+* Ensure test user profile has the following attributes on the **user_metadata** section -
 
 ```
 {
